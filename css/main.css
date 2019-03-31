@@ -1,0 +1,69 @@
+html
+body{
+  background-color: #FFFFFF;
+  height: 100%;
+  flex-direction: column;
+
+}
+section{
+  height: 600px;
+  background: #FFFFFF;
+}
+
+
+@media screen and (max-width:500px) {
+body{
+  width: 100%;
+  }
+
+.hero{
+  justify-content:flex-end;
+  background-size: cover;
+  }
+h1{
+  font-size:16px;
+}
+
+/*#title1{
+  font-size:16px;
+  letter-spacing: 1.2em;
+  }*/
+}
+header{
+  display: flex;
+  flex-direction:row;
+  justify-content:space-between;
+  height: 40px;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+.header__logo {
+  height: 32px;
+}
+
+.hero{
+  margin: 0 0;
+  background-image: url("../img/barbara-sampaio-236871-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items:center;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+
+
+}
+h1{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: normal;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+#title1{
+  font-weight:lighter;
+  letter-spacing: 0.03em;
+}
