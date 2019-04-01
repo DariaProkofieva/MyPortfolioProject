@@ -73,6 +73,9 @@ a{
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
 
 }
 #sectionAboutMe{
@@ -105,10 +108,102 @@ p{
   letter-spacing: 0.03em;
   color:#000000;
 }
+.portfolio{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: auto;
+}
+#sectionPortfolio{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+#item1{
+  display: flex;
+  flex-direction: column;
+}
+#item2{
+  display: flex;
+  flex-direction: column;
+  padding-top: 35px;
+}
+#item3{
+  display: flex;
+  flex-direction: column;
+  padding-top: 35px;
+}
+#item2and3{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#item4{
+  display: flex;
+  flex-direction: column;
+  padding-top: 35px;
+}
+#image2{
+  height: 540px;
+  width: 350px;
+}
+#image3{
+  height: 235px;
+  width: 400px;
+}
+#image4{
+  height: 235px;
+  width: 400px;
+}
+#image5{
+  height: 540px;
+  width: 350px;
+}
+.button1{
+  height: 50px;
+  width: 350px;
+  background-color: #000000;
+  cursor: pointer;
+  border: 0px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: lighter;
+  line-height: normal;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+.button2{
+  height: 50px;
+  width: 400px;
+  background-color: #000000;
+  cursor: pointer;
+  border: 0px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: lighter;
+  line-height: normal;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+.button1:hover,
+.button1:focus {
+   color: #000000;
+   border-color: currentColor;
+   background-color:  #696969;
+}
+.button2:hover,
+.button2:focus {
+   color: #000000;
+   border-color: currentColor;
+   background-color:  #696969;
+}
 
 @media screen and (max-width:500px) {
   body{
-  width: 100%;
   margin:0;
   padding-top: 10px;
   }
@@ -138,14 +233,40 @@ p{
   line-height: 1.2em;
  }
  #image1{
-   height: 80%;
-   width:80%;
+   height: 100%;
+   width:100%;
+ }
+ #image2, #image3, #image4{
+   height: 100%;
+   width:100%;
+   justify-content: center;
+ }
+ #image5{
+   height: 85%;
+   width:100%;
+   justify-content: center;
+ }
+.button1,.button2{
+   width:100%;
+   height: 100%;
+   font-size: 16px;
  }
  #sectionAboutMe{
-   padding: 0px 20px 0px 20px;
+  padding: 10px 20px 10px 20px;
  }
  .aboutMe{
-   flex-direction: column;
+   height: 200px;
+
+ }
+ .portfolio{
+   flex-direction: row;
+   text-align: center;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+ #sectionPortfolio{
+   flex-wrap: wrap;
+   justify-content: center;
  }
 }
 
